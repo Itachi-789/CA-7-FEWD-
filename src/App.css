@@ -1,0 +1,358 @@
+/* Styling the react app */
+@import url("https://fonts.googleapis.com/css2?family=Averia+Libre&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rowdies&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=PT+Sans+Narrow&display=swap');
+
+#root{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.container h1 {
+  position: relative;
+  bottom: 150px;
+  left: 25px;
+}
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2em;
+  color: rgba(255, 255, 255, 0.2);
+  text-decoration: blue;
+}
+header button {
+  height: 5vh;
+  width: 15vw;
+  border-radius: 40px;
+  font-size: 20px;
+  color: white;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: red;
+  transition: ease-in-out 0.3s;
+}
+header input {
+  width: 40%;
+  height: 4vh;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 5px 0 rgba(242, 2, 2, 0.275);
+  margin-top: 1vh;
+}
+header button:hover {
+  transform: scale(1.15);
+}
+.welcomeText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: red;
+  font-size: 1em;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+header h1 {
+  color: red;
+  font-size: 2.9rem;
+  margin-left: 1vw;
+  font-family: 'Monoton', cursive;
+}
+#bookCollectionGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 2em;
+  row-gap: 2em;
+  padding: 2em;
+  margin-top: 3rem;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+}
+.searchField {
+  display: flex;
+  justify-content: space-evenly;
+  width: 35vw;
+}
+.searchField input {
+  padding: 10px;
+  width: 25vw;
+}
+.searchField button {
+  margin-top: 1%;
+  width: 7vw;
+  padding: 5px;
+  height: 7vh;
+  background: rgb(240, 3, 67);
+  background: red;
+    
+}
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 60vh;
+}
+#NoresultSpace {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-family: "Rowdies", cursive;
+  height: 100%;
+}
+.bookContainer {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50vh;
+  width: 15vw;
+  border-radius: 30px;
+  background: white;
+  color: darkblue;
+  box-shadow: 0 10px 15px 0 rgba(242, 2, 2, 0.275);
+}
+.mainContainer > div:last-of-type button {
+  height: 5vh;
+  width: 12vw;
+  border-radius: 10px;
+  font-size: 75%;
+  font-family: "Rowdies", cursive;
+  background: rgb(223, 10, 10);
+  color: rgba(0, 60, 255, 0.897);
+  transition: ease-in-out 0.3s;
+  box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.4);
+}
+.mainContainer > div:last-of-type button:hover {
+  transform: scale(1.1);
+}
+.bookFooter {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.bookFooter h1 {
+  font-size: 18px;
+  font-family: "Averia Libre", cursive;
+}
+.bookContainer img {
+  height: 30vh;
+  width: 10vw;
+  border-radius: 20px;
+  box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
+}
+footer {
+  padding: 10px;
+  background-color: white;
+  background-size: contain;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer img {
+  height: 50px;
+  width: 50px;
+}
+footer div {
+  width: 25vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+hr {
+  width: 100%;
+  color: blue;
+  height: 12px;
+  background-color: lightpink;
+}
+.formcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Rowdies", cursive;
+}
+form {
+  height: 90vh;
+  width: 50vw;
+  border: 2px solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(218, 43, 43);
+}
+input {
+  height: 3vh;
+  width: 20vw;
+  border-radius: 10px;
+  box-shadow: 0 4px 0 4px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+}
+.form-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: fit-content;
+}
+label {
+  align-self: flex-start;
+  padding: 5px;
+  font-size: 1.5em;
+}
+.errorMessage {
+  color: black;
+  font-weight: 300;
+  padding-top: 10px;
+  align-self: flex-start;
+}
+form button {
+  height: 5vh;
+  width: 10vw;
+  border-radius: 20px;
+  border: none;
+}
+#disabledButton {
+  background: rgba(255, 255, 255, 0.5);
+  color: blue;
+  font-family: "Rowdies", cursive;
+  font-weight: 400;
+}
+#workingButton {
+  font-family: "Rowdies", cursive;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: green;
+}
+#footer{
+  font-size: small;
+  /* position: fixed; */
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+}
+#NoresultSpace{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #buttonOnClick{
+    margin-top: 2rem;
+    width: 50vw;
+    height: 4.5vh;
+  }
+  header button{
+    width: 50vw;
+    margin-top: 5%;
+  }
+  .searchField {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .searchField input{
+    height: 2vh;
+    width: 80%;
+  }
+  .searchField button{
+    width: 50%;
+    height: 40%;
+    margin-top: 2vh;
+  }
+  #bookCollectionGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .bookContainer{
+    width: 70%;
+  }
+  .bookContainer img{
+    width: 60%;
+  }
+  .mainContainer > div:last-of-type button{
+    width: 100%;
+  }
+  #NoresultSpace{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 38bvh;
+    font-size: 80%
+  }
+  #NoresultSpace img{
+    height: 40vh;
+    width: auto;
+  }
+  form{
+    width: 90%;
+    position: fixed;
+  }
+  .form-element{
+    width: 80%;
+  }
+  form input{
+    height: 2vh;
+    width: 100%;
+  }
+  form button{
+    height: 5vh;
+    width: 60%;
+    border: 1px solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 60, 255, 0.897);
+  }
+  #workingButton{
+    width: 40vw;
+    background-color: green;
+    color: white;
+    font-size: larger;
+    box-shadow: 0 5px 10px 0 rgba(0, 60, 255, 0.897);
+  }
+  #footer{
+    font-size: small;
+    display: grid;
+    /* position: fixed; */
+    /* bottom: 0; */
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+  }
+}
